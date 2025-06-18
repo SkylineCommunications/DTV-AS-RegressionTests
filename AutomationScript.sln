@@ -39,6 +39,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{9A61
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RT_Customer_MyFirstRegressionTest_1Tests", "RT_Customer_MyFirstRegressionTest_1Tests\RT_Customer_MyFirstRegressionTest_1Tests.csproj", "{2703C9BC-3365-4274-A04D-7F74D89AE599}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RT_DTV_Evertz_GeneralPlatform", "RT_DTV_Evertz_GeneralPlatform", "{1E76CAF9-6F3E-453C-8B4C-2758FE035376}"
+	ProjectSection(SolutionItems) = preProject
+		RT_DTV_Evertz_GeneralPlatform.xml = RT_DTV_Evertz_GeneralPlatform.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{985CEE41-4AC8-4117-B5FF-7D405FEA40EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RT_DTV_Evertz_GeneralPlatform_1", "RT_DTV_Evertz_GeneralPlatform_1\RT_DTV_Evertz_GeneralPlatform_1.csproj", "{924774D8-3D31-4C22-986E-369C6D9ED7AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +62,10 @@ Global
 		{2703C9BC-3365-4274-A04D-7F74D89AE599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2703C9BC-3365-4274-A04D-7F74D89AE599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2703C9BC-3365-4274-A04D-7F74D89AE599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{924774D8-3D31-4C22-986E-369C6D9ED7AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924774D8-3D31-4C22-986E-369C6D9ED7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924774D8-3D31-4C22-986E-369C6D9ED7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924774D8-3D31-4C22-986E-369C6D9ED7AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +76,9 @@ Global
 		{D77DABF5-3BBF-4E07-9A0D-D85CE2277E4F} = {77137461-8422-4CE2-AF0D-03F9439732EF}
 		{1F328CB2-2466-4CAD-BF2C-CBFD7C69BA12} = {D77DABF5-3BBF-4E07-9A0D-D85CE2277E4F}
 		{0D197FF4-225F-41A0-B0C2-02E031C066DD} = {9A61DD14-E718-4FDE-AAE3-EA61B082AF1D}
+		{1E76CAF9-6F3E-453C-8B4C-2758FE035376} = {AD2AA03C-FB74-42D8-8FE0-E038DD5F1F24}
+		{985CEE41-4AC8-4117-B5FF-7D405FEA40EC} = {1E76CAF9-6F3E-453C-8B4C-2758FE035376}
+		{924774D8-3D31-4C22-986E-369C6D9ED7AE} = {985CEE41-4AC8-4117-B5FF-7D405FEA40EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7C980004-ACC0-4CAB-876E-D61606A0D82F}
@@ -70,5 +86,6 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Library\Library.projitems*{0d197ff4-225f-41a0-b0c2-02e031c066dd}*SharedItemsImports = 13
 		Library\Library.projitems*{1f328cb2-2466-4cad-bf2c-cbfd7c69ba12}*SharedItemsImports = 4
+		Library\Library.projitems*{924774d8-3d31-4c22-986e-369c6d9ed7ae}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal
