@@ -66,21 +66,23 @@
 			}
 		}
 
-		private bool RunTestCaseSatelliteSwitching(IEngine engine, int maxAttempts = 3)
+		private bool RunTestCaseSatelliteSwitching(IEngine engine)
 		{
 			var valueToSet = 0;
 			var element = engine.FindElement(ElementName);
-
+			var expectedValue = 0;
 			if (element != null)
 			{
 				var activeChannel = Convert.ToInt32(element.GetParameter(activeChannelPid));
 				if (activeChannel == (int)BpxrfActiveChannels.ChannelA)
 				{
 					valueToSet = (int)BpxrfModes.ChannelB;
+					expectedValue = (int)BpxrfActiveChannels.ChannelB;
 				}
 				else
 				{
 					valueToSet = (int)BpxrfModes.ChannelA;
+					expectedValue = (int)BpxrfActiveChannels.ChannelA;
 				}
 
 				if (valueToSet != 0)
@@ -88,7 +90,6 @@
 					element.SetParameter(modeWritePid, valueToSet);
 					System.Threading.Thread.Sleep(3000);
 
-					var expectedValue = valueToSet - 3;
 					activeChannel = Convert.ToInt32(element.GetParameter(activeChannelPid));
 
 					if (activeChannel == expectedValue)
